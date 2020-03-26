@@ -999,7 +999,7 @@ def launch(entry_filename, file_format, rec_format, output_ID, master=None, form
             dcrec_libelles = "-".join([doct_libelle, recordt_libelle])
             doc_record_type[dcrec] = dcrec_libelles
     print("Fichier en entrée : ", entry_filename)
-    if (file_format == 1 or file_format == 3):
+    if (file_format == 1 or file_format == 2):
         iso2tables(master, entry_filename, file_format, rec_format, output_ID)
     else:
         xml2tables(master, entry_filename, rec_format, output_ID)
